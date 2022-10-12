@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Registration form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>MCA CONNECT</h1>
+        <div class="card">
+            <div class="inner_box" id="card">
+                <div class="card-front">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Enter The Email" id="man" required>
+                        <input type="password" class="input-box" placeholder="Enter The Password" id="pas" required>
+                        <button type="submit" class="submit-btn" onclick="window.location.href='home.html';">Submit </button>
+                    </form>
+                    <button type="submit" class="btn" onclick="openRegister()">I Am New Here</button>
+                    <a href="">Forgot Password</a>
+                </div>
+
+                <div class="card-back">
+                    <h2>Registration Form</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Enter The First Name" required>
+                        <input type="email" class="input-box" placeholder="Enter The Email" required>
+                        <input type="password" class="input-box" placeholder="Enter The Password" required>
+                        <input type="password" class="input-box" placeholder="Confirm Password"required>
+                        <button type="submit" class="submit-btn" >Submit</button>
+
+
+                    </form>
+                    <button type="submit" class="btn" onclick="openLogin()">Old User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var card=document.getElementById("card");
+        function openRegister(){
+            card.style.transform="rotateY(-180deg)"
+        }
+        function openLogin(){
+            card.style.transform="rotateY(0deg)"
+        }
+        function open(){
+            location.href = "file:///F:/MCA CONNECT-html-template-master/home.html";
+        
+
+        }
+    </script>
+</body>
+</html>
